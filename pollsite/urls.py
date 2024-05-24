@@ -21,5 +21,6 @@ from survey import views
 urlpatterns = [
     path('', views.home, name='home'),
     path('survey/', include('survey.urls')),
-    path('admin/', admin.site.urls)
+    path('admin/', admin.site.urls),
+    path('accounts/', include('django.contrib.auth.urls'))
 ]
